@@ -32,7 +32,7 @@ app.get('/:id', async (req, res) => {
     valueInputOption: 'USER_ENTERED',
     resource: { values: [[id, currentDateString + 'T' + currentTimeString, '']] },
   });
-  res.send('User has arrived');
+  res.send('Welcome to the event!');
 });
 
 const port = process.env.PORT || 3000;
